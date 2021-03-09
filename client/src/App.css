@@ -1,0 +1,38 @@
+.App {
+  text-align: center;
+}
+
+#todo{
+  background-color: #f2f2f2;
+  margin:10px;
+  padding:10px 30px;
+}
+
+.todotask{
+  max-height: 200px;
+}
+
+.todotask .card{
+  max-height: 100%;
+}
+
+.list-group-item div{
+  display: inline-block;
+  text-align: left;
+}
+
+.Strike{
+  text-decoration: line-through;
+}
+
+.label{
+  display: block;
+  color: #888;
+  font-size: 0.7rem;
+  margin-top: 5px;
+  margin-left: 2px;
+}
+.rowMiddle{
+  display: flex;
+    align-items: center;
+}
