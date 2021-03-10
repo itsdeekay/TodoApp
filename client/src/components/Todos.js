@@ -9,11 +9,15 @@ const Todos = ({setCurrentId}) => {
             To Do list
             <div className="row justify-content-md-center">
                 <div className="col-md-8">
-                <ul className="list-group">
-                {todos.map((todo) => (
-                    <Todo todo={todo} key={todo.todo} setCurrentId={setCurrentId} />
-                ))}
-                </ul>
+                    {todos.length>0?
+                        <ul className="list-group">
+                        {console.log(todos)}
+                    {todos.map((todo) => (
+                        <Todo todo={todo} key={todo.todo} setCurrentId={setCurrentId} />
+                    ))}
+                    </ul> : "Loading Tasks..."
+                    }
+                
                 
                 </div>
                 
